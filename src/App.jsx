@@ -1,4 +1,3 @@
-// App.jsx
 import React, { useState, useEffect, useCallback, useMemo } from 'react';
 import Calendar from './components/Calendar';
 import BookingPanel from './components/BookingPanel';
@@ -40,7 +39,7 @@ function App() {
     setSelectedRange({ start: startDate, end: endDate });
   }, []);
 
-  // if (loading) return <LoadingSpinner />;
+  if (loading) return <LoadingSpinner />;
   // if (error) return <ErrorMessage message={error} />;
 
   return (
