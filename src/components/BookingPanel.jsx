@@ -1,4 +1,3 @@
-// components/BookingPanel.jsx
 import React, { useMemo } from 'react';
 import { normalizeRange, getNightsBetween } from '../utils/dateUtils';
 

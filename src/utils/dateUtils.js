@@ -1,4 +1,3 @@
-// utils/dateUtils.js
 export const getCalendarDays = (year, month) => {
   const firstDayOfMonth = new Date(year, month, 1);
   const startDayOfWeek = firstDayOfMonth.getDay(); // 0 = Sunday
