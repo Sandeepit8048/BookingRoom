@@ -1,5 +1,5 @@
 import { getHeatColor } from "../utils/bookingUtils";
-import { ROOM_TYPES, SOURCES, STATUSES } from "../constants";
+import { ROOM_TYPES, SOURCES, STATUSES } from "../constants/Index";
 
 // ─── HEATMAP LEGEND ───────────────────────────────────────────────────────────
 

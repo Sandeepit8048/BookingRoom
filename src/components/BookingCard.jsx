@@ -1,4 +1,4 @@
-import { STATUS_CONFIG } from "../constants";
+import { STATUS_CONFIG } from "../constants/Index";
 import { diffDays, parseDate } from "../utils/dateUtils";
 
 const fmt = (d) =>

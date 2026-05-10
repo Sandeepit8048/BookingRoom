@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { BAR_COLORS } from "../constants";
+import { BAR_COLORS } from "../constants/Index";
 import { toDateStr, parseDate, addDays, diffDays } from "../utils/dateUtils";
 
 const ROOMS = ["101","102","103","201","202","203","301","302","401","402"];

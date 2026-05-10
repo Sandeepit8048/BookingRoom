@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { TOTAL_ROOMS } from "../constants";
+import { TOTAL_ROOMS } from "../constants/Index";
 import { bookingOccupiesNight } from "../utils/bookingUtils";
 import { parseDate, diffDays } from "../utils/dateUtils";
 
