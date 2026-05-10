@@ -1,4 +1,4 @@
-import { TOTAL_ROOMS } from "../constants";
+import { TOTAL_ROOMS } from "../constants/Index";
 import { bookingOccupiesNight } from "../utils/bookingUtils";
 
 /**
