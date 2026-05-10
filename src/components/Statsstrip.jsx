@@ -7,15 +7,6 @@ const revFormatter = new Intl.NumberFormat("en-IN", {
   style: "currency", currency: "INR", notation: "compact", maximumFractionDigits: 1,
 });
 
-/**
- * StatsStrip
- * 5-tile row of at-a-glance monthly metrics.
- *
- * Props:
- *   bookings — filtered booking array
- *   year     — displayed year
- *   month    — displayed month index (0-11)
- */
 const StatsStrip = ({ bookings, year, month }) => {
   const monthBookings = useMemo(() => {
     const start      = `${year}-${String(month + 1).padStart(2, "0")}-01`;

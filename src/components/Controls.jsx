@@ -18,13 +18,6 @@ export const Legend = () => (
 
 // ─── FILTER BAR ───────────────────────────────────────────────────────────────
 
-/**
- * FilterBar
- * Props:
- *   filters  — { roomType, source, status }
- *   onChange — (newFilters) => void
- *   onExport — () => void
- */
 export const FilterBar = ({ filters, onChange, onExport }) => {
   const filterDefs = [
     ["roomType", ROOM_TYPES],
@@ -86,12 +79,6 @@ export const FilterBar = ({ filters, onChange, onExport }) => {
 
 // ─── SEARCH BAR ───────────────────────────────────────────────────────────────
 
-/**
- * SearchBar
- * Props:
- *   value    — current query string
- *   onChange — (newValue: string) => void
- */
 export const SearchBar = ({ value, onChange }) => (
   <div className="relative mb-4">
     <svg

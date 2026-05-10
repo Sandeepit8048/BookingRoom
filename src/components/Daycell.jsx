@@ -3,23 +3,7 @@ import OccupancyBar from "./Occupancybar.jsx";
 import Tooltip      from "./Tooltip";
 import { getHeatColor, getHeatTextColor } from "../utils/bookingUtils";
 
-/**
- * DayCell
- * A single tile in the monthly calendar grid.
- *
- * Props:
- *   dateStr        — "YYYY-MM-DD"
- *   dayNum         — day-of-month number
- *   isCurrentMonth — dim cells outside the current month
- *   occupancy      — number of rooms occupied this night
- *   isToday        — highlight today's date
- *   isSelected     — anchor of the drag/click selection
- *   isInRange      — inside the selection range
- *   isDragging     — suppress tooltip during drag
- *   showTooltip    — parent opt-in for tooltip rendering
- *   bookings       — filtered booking array (for tooltip)
- *   onMouseDown / onMouseEnter / onMouseUp / onClick — selection callbacks
- */
+
 const DayCell = ({
   dateStr, dayNum, isCurrentMonth, occupancy, isToday,
   isSelected, isInRange, isDragging,

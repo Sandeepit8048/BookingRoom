@@ -1,19 +1,6 @@
 import { useState, useCallback, useEffect } from "react";
 
-/**
- * useCalendarSelection
- * Manages drag-to-select and single-click date selection on the calendar grid.
- *
- * Returns:
- *   selStart, selEnd         — raw selection anchors
- *   selRange                 — { start, end } normalised (start <= end)
- *   isDragging               — whether a drag is in progress
- *   handleMouseDown(dateStr) — start a new drag
- *   handleMouseEnter(dateStr)— extend drag in progress
- *   handleMouseUp(dateStr)   — commit drag
- *   handleCellClick(dateStr) — single-click select
- *   clearSelection()         — reset
- */
+
 export function useCalendarSelection() {
   const [selStart,   setSelStart]   = useState(null);
   const [selEnd,     setSelEnd]     = useState(null);

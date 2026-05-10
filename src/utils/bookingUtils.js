@@ -2,19 +2,13 @@ import { TOTAL_ROOMS } from "../constants";
 
 // ─── BOOKING FILTERS ──────────────────────────────────────────────────────────
 
-/**
- * Returns true when the booking occupies the given night (date string).
- * A booking "occupies" a night if checkIn <= date < checkOut and it is not cancelled.
- */
+
 export const bookingOccupiesNight = (booking, dateStr) => {
   if (booking.status === "cancelled") return false;
   return booking.checkIn <= dateStr && dateStr < booking.checkOut;
 };
 
-/**
- * Returns true when the booking overlaps the closed date range [startStr, endStr].
- * Cancelled bookings are excluded.
- */
+
 export const bookingOverlapsRange = (booking, startStr, endStr, addDaysFn, toDateStrFn, parseDateFn) => {
   if (booking.status === "cancelled") return false;
   const rangeEnd = toDateStrFn(addDaysFn(parseDateFn(endStr), 1));

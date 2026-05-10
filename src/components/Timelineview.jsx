@@ -4,17 +4,7 @@ import { toDateStr, parseDate, addDays, diffDays } from "../utils/dateUtils";
 
 const ROOMS = ["101","102","103","201","202","203","301","302","401","402"];
 
-/**
- * TimelineView
- * Horizontal Gantt-style view showing room bookings across the current month.
- *
- * Props:
- *   filteredBookings — booking array already filtered by the active filters
- *   viewYear         — displayed year
- *   viewMonth        — displayed month index (0–11)
- *   todayStr         — "YYYY-MM-DD" of today
- *   onBarClick(checkIn, checkOutMinus1Str) — called when a bar is clicked
- */
+
 const TimelineView = ({ filteredBookings, viewYear, viewMonth, todayStr, onBarClick }) => {
   const daysInMonth = new Date(viewYear, viewMonth + 1, 0).getDate();
   const monthStart  = `${viewYear}-${String(viewMonth + 1).padStart(2, "0")}-01`;
