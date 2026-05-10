@@ -1,7 +1,7 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
 import BOOKINGS_DATA from "../data/booking.json";
 
-import { DAYS_OF_WEEK, MONTH_NAMES, TOTAL_ROOMS } from "../constants";
+import { DAYS_OF_WEEK, MONTH_NAMES, TOTAL_ROOMS } from "../constants/Index";
 import { toDateStr, parseDate, addDays, diffDays } from "../utils/dateUtils";
 import { bookingOccupiesNight, bookingOverlapsRange, exportBookingsCSV } from "../utils/bookingUtils";
 import { useCalendarSelection } from "../hooks/useCalendarSelection";
